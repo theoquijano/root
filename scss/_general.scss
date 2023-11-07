@@ -1,0 +1,114 @@
+.estiloNav{
+    @include box(flex, 20px);
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorBackground;
+    color: $colorTexto; 
+    .tituloNav{
+        font-size: 24px; 
+        font-weight: bold;
+    }
+}
+ul{
+    @include box(flex, 0px);
+    list-style-type: none; 
+    li{
+        margin-right: 50px;
+        a{
+            text-decoration: none; 
+            color: $colorTexto;
+            font-weight: bold;
+            &:hover{
+                color: black;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    ul{
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+        padding: 0px;
+    }
+    .sectionStyle{
+        @include box(flex, 20px);
+        flex-direction: column;
+        align-items: center; 
+        font-size: 150%;
+        div img{
+            width: 100%;
+        }
+        .parrafoStyle{
+            -ms-flex-align: center;
+            padding: 20px;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    .sedeStyle{
+        flex-direction: column;
+        align-items: center;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+.logoNav{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: $colorTexto;
+        font-family: 'Gill Sans';
+        font-weight: bold;
+        &:hover{
+            color: $colorTexto;
+        }
+    }
+}
+.sectionStyle{
+    @include box(flex, 20px);
+    align-items: center; 
+    font-size: 150%;
+    .parrafoStyle{
+        -ms-flex-align: center;
+        padding: 20px;
+        span{
+            font-weight: bold;
+        }
+    }
+}
+.sedeStyle{
+    @include box(flex, 20px);
+    align-items: center; 
+    font-size: 150%;
+    iframe{
+        padding: 20px;
+        margin-left: 20px;
+    }
+}     
+.sectionForm{
+    background-color: rgb(37, 37, 37);
+    @include box(flex, 20px);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .formStyle{
+        background-color: $colorTexto;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+footer{
+    background: whitesmoke;
+    .footerStyle {
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px;
+        justify-content: space-between;
+    }
+}

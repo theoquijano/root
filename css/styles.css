@@ -1,3 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
 
+.estiloNav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+.estiloNav .tituloNav {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  padding: 0px;
+  list-style-type: none;
+}
+ul li {
+  margin-right: 50px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    padding: 0px;
+  }
+  .sectionStyle {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+  }
+  .sectionStyle div img {
+    width: 100%;
+  }
+  .sectionStyle .parrafoStyle {
+    -ms-flex-align: center;
+    padding: 20px;
+  }
+  .sectionStyle .parrafoStyle span {
+    font-weight: bold;
+  }
+  .sedeStyle {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sedeStyle iframe {
+    width: 100%;
+  }
+}
+.logoNav {
+  list-style-type: none;
+}
+.logoNav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans";
+  font-weight: bold;
+}
+.logoNav a:hover {
+  color: white;
+}
+
+.sectionStyle {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  font-size: 150%;
+}
+.sectionStyle .parrafoStyle {
+  -ms-flex-align: center;
+  padding: 20px;
+}
+.sectionStyle .parrafoStyle span {
+  font-weight: bold;
+}
+
+.sedeStyle {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  font-size: 150%;
+}
+.sedeStyle iframe {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.sectionForm {
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sectionForm .formStyle {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background: whitesmoke;
+}
+footer .footerStyle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=styles.css.map */
